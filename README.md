@@ -17,7 +17,8 @@ A Simple example of React App with a Node Backend
   <li>Run the project "npm start"</li>
 </ol>
 
-##### Note<tr id="react-install">: 
+##### Note:
+
 If you have problem during "npm install" process you can follow below steps:
 
 - [npm install -g npm-check-updates](https://www.npmjs.com/package/npm-check-updates/v/3.0.12)
@@ -42,37 +43,8 @@ If you have problem during "npm install" process you can follow below steps:
     </blockquote>
   </li>
   <li>Create a <b>server</b> folder in your project folder</li>
-  <li>Place index.js file in server folder. This js file will be our server. <b>index.js</b>:
-    <blockquote>
-      // server/index.js
-
-      const express = require("express");
-      const bodyParser = require('body-parser');
-
-      const PORT = process.env.PORT || 3001;
-
-      const app = express();
-      app.use(bodyParser.urlencoded({ extended: false }));
-      app.use(bodyParser.json());
-
-      app.get('/', (req, res) => {
-        res.send("Hello King");
-      })
-
-      app.get("/api", (req, res) => {
-        res.json({ message: "Hello from server! The King will be back soon!!" });
-      });
-
-      app.post("/post", (req, res) => {
-        console.log("Connected to React");
-        console.log(req.body.name);
-        res.json({ message: "Hello " + req.body.name });
-      });
-
-
-      app.listen(PORT, () => {
-        console.log(`Server listening on ${PORT}`);
-      });
+  <li>Place index.js file in server folder. This js file will be our server. You can use this <a href="https://raw.githubusercontent.com/MuhammedSafa/simple-react-with-nodejs/main/server/index.js?token=GHSAT0AAAAAAB7UO34R4C4FUAPCVV63ON22ZAG5OZA"><b>index.js</b></a> file.
+    
       
   </li>
     <li>Here we use express. To install express run this command: 
@@ -113,6 +85,8 @@ If you have problem during "npm install" process you can follow below steps:
     <blockquote>
       npm install axios
     </blockquote></li>
+  <li>Go to your test/src folder. We need to prepare our App.js file. You can use this <a href="https://raw.githubusercontent.com/MuhammedSafa/simple-react-with-nodejs/main/test/src/App.js?token=GHSAT0AAAAAAB7UO34QTYOCYQGR5SC4OCSEZAG5S4A"><b>App.js</b></a> file. :
+  </li>
   <li>In our created react folder we need to add property which is called proxy to our package.json file. 
     We need to add this because we can request to node server without provide origin running on (http://localhost:3001):
     
@@ -136,11 +110,9 @@ If you have problem during "npm install" process you can follow below steps:
     <blockquote>
         npm start
     </blockquote>
-    <b>Note:</b> If you problem with starting the project you can check <a href="#react-install">note</a>
+    <b>Note:</b> If you problem with starting the project you can check <a href="#note">note</a>
   </li>
 </ol>
-
-
 
 
 Enjoy the project...
