@@ -72,7 +72,7 @@ If you have problem during "npm install" process you can follow below steps:
   </li>
   <li>Finally start your project:
       <blockquote>
-        node start
+        npm run start
       </blockquote>
   </li>
   <li>Open your browser and type <b>http://localhost:3001</b>. You should see server response "Hello King"</li>
