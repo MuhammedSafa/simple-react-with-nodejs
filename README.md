@@ -33,7 +33,7 @@ If you have problem during "npm install" process you can follow below steps:
 - [Axios](https://axios-http.com/)
 - [Axios Tutorials](https://www.digitalocean.com/community/tutorials/react-axios-react)
 
-# To create project from zero
+# To create project from scratch
 
 <ol>
   <li>Create a folder with your project name</li>
